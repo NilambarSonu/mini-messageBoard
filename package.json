@@ -1,0 +1,23 @@
+{
+  "name": "mini-messageboard",
+  "version": "1.0.0",
+  "description": "This is a massaging app repo",
+  "homepage": "https://github.com/sanatan223/mini-messageBoard#readme",
+  "bugs": {
+    "url": "https://github.com/sanatan223/mini-messageBoard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanatan223/mini-messageBoard.git"
+  },
+  "license": "ISC",
+  "author": "Sanatan Sethi",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
