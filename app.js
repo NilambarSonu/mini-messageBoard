@@ -1,11 +1,16 @@
-const express = require("express")
-const app = express()
+const express = require("express");
+const app = express();
 const port = 3000;
+const indexRouter = require("./routes/indexRoute.js");
+const path = require("node:path");
 
 
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+app.use("/", indexRouter);
 
-app.get("/", (req, res) => {
-    res.send("Hello website!")
+app.get("/new", (req, res) => {
+    res.send("This is the new message sending part.")
 })
 
 

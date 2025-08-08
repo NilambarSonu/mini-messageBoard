@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <% messages.forEach((message, i) => { %>
+            <div><%= message.user %></div>
+            <div><%= message.added.toDateString() %></div>
+            <div><%= message.text %></div>
+        <% }); %>
+    </body>
+</html>
