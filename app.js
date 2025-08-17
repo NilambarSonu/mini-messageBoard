@@ -5,8 +5,12 @@ const indexRouter = require("./routes/indexRoute.js");
 const path = require("node:path");
 
 
+
+app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
+
 app.use("/", indexRouter);
 
 app.get("/new", (req, res) => {
