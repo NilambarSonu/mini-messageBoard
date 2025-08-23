@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/formStyles.css">
+    <title>New message</title>
+</head>
+<body class="flex">
+    <form class="form-body" action="/new" method="post">
+        <label for="name">Enter name:</label>
+        <input class="padding" type="text" id="name" placeholder="Ex: sanatan" name="user_name">
+        <label for="message">Enter the message:</label>
+        <textarea class="padding" name="message" id="message" rows="40" cols="80">Hello, world !</textarea>
+        <div class="flex">
+            <button class="button padding" type="submit">Submit</button>
+            <button class="button padding" type="reset">Clear</button>
+        </div>
+    </form>
+</body>
+</html>

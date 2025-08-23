@@ -1,5 +1,4 @@
 const express = require("express");
-const app = express();
 const indexRouter = express.Router();
 
 
@@ -27,8 +26,22 @@ const messages = [
 ];
 
 
-indexRouter.get("/", (req, res) => {
-  console.log("router works");
+indexRouter.get("/new", (req, res) => {
+  res.render('form');
+})
+
+indexRouter.post("/new", (req, res) => {
+    const name = req.body.user_name;
+    const message = req.body.message;
+    messages.push({
+      text: message,
+      user: name,
+      added: new Date()
+  })
+  res.redirect('/');
+})
+
+indexRouter.get("/", (req, res) => { 
   res.render("index", { messages: messages });
 })
 
