@@ -76,6 +76,7 @@ body{
     background-attachment: flex;
     background-position: center;
     padding: 10px;
+    height: 620px;;
     color: white;
     font-size: 19px;
     font-style:italic;
@@ -89,8 +90,8 @@ body{
     border: 5px solid rgb(33, 45, 214);
     box-shadow: 0 0 6px 2px #1347aea7, 0 0 6px 2px #7d29d19d;
 }
-.name-box{
-    background-color: rgba(99, 90, 90, 0.846);
+.name-box,.email-box{
+    background-color: rgba(99, 90, 90, 0.613);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -104,7 +105,16 @@ body{
     box-shadow: 0 0 6px 2px #404ecfc6, 0 0 6px 2px #5629d1ce;
     outline: none; /* Removes white outline/border on focus */
 }
+.email-box{
+    height: 8px !important;
+    width: 320px !important;
+    margin-left: 70px !important;
+}
 .name-box:hover{
+    border: 3px solid rgb(61, 67, 152);
+    box-shadow: 0 0 4px 1px #1347aea7, 0 0 4px 1px #7d29d19d;
+}
+.email-box:hover{
     border: 3px solid rgb(61, 67, 152);
     box-shadow: 0 0 4px 1px #1347aea7, 0 0 4px 1px #7d29d19d;
 }
@@ -140,4 +150,5 @@ body{
     }
     body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.86), #00000016), url("images/ChatGPT\ Image\ Aug\ 26\,\ 2025\,\ 01_03_12\ PM.png"); 
+    }
 }
