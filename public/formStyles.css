@@ -107,8 +107,8 @@ body{
 }
 .email-box{
     height: 8px !important;
-    width: 320px !important;
-    margin-left: 70px !important;
+    width: 340px !important;
+    margin-left: 62px !important;
 }
 .name-box:hover{
     border: 3px solid rgb(61, 67, 152);
@@ -142,6 +142,11 @@ body{
     }
     .name-box {
         width: 95%;
+    }
+    .email-box{
+    height: 8px !important;
+    width: 315px !important;
+    margin-left: 4px !important;
     }
     .form-body input {
         margin-left: 20px;
